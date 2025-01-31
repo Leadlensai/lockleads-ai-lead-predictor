@@ -3,8 +3,11 @@ import streamlit as st
 import joblib
 import numpy as np
 
-# Laad het AI-model
-model = joblib.load("ai_lead_verkoopmodel_compatible.pkl")
+import joblib
+
+# Laad het model met versie-informatie
+model_metadata = joblib.load("ai_lead_verkoopmodel_final.pkl")
+model = model_metadata["model"]  # Haal het daadwerkelijke model eruit
 
 st.title("🏡 AI Vastgoed Lead Voorspeller")
 
