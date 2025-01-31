@@ -6,8 +6,7 @@ import numpy as np
 import joblib
 
 # Laad het model met versie-informatie
-model_metadata = joblib.load("ai_lead_verkoopmodel_final.pkl")
-model = model_metadata["model"]  # Haal het daadwerkelijke model eruit
+model = joblib.load("ai_lead_verkoopmodel_fixed_version.pkl")
 
 st.title("🏡 AI Vastgoed Lead Voorspeller")
 
