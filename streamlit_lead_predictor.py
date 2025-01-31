@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 # Laad het AI-model
-model = joblib.load("ai_lead_verkoopmodel.pkl")
+model = joblib.load("ai_lead_verkoopmodel_fixed.pkl")
 
 st.title("🏡 AI Vastgoed Lead Voorspeller")
 
